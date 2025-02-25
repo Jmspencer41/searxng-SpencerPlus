@@ -1,104 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>Spencer+</title>
-		<meta charset="utf-8"> 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/skel.css">
-        <link rel="stylesheet" href="css/styles.css">
-    </head>
-    <body>
-		<!-- Header -->
-        <div id="header" class="skel-panels-fixed">
-            <div id="logo">
-                <img src="images/Spencer_Plus_Logo.png">
-            </div>
-            <nav id="nav">
-                <ul>
-                    <li><a href="index.html">Homepage</a></li>
-                    <li class="active"><a href="resume.html">Resume</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+<head>
+    <title>Spencer+</title>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/skel.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <!-- Header -->
+    <div id="header" class="skel-panels-fixed">
+        <div id="logo">
+            <img src="{{ url_for('static', filename='images/Spencer_Plus_Logo.png') }}">
         </div>
-        <!--main-->
-        <div class="resumeRow">
-            <div class="resumeColumns left">
-                <img src="images/Headshot.jpg" alt="Headshot"> 
-                <h1>EDUCATION</h1>
-                <h2>Deming High School</h2>
-                <h3>Class of 2011</h3>
-                <h2>Northern Kentucky University</h2>
-                <h3>Currently pursuing a Bachelor's Degree in
-                    Computer Science with a minor in Computer Information Technology and Mathematics.</h3>
-                <h1>SKILLS</h1>
-                <h3>Python, Java and C.</h3>
-                <h3>Linux</h3>
-                <h3>Microsoft 365</h3>
-                <h3>MySQL</h3>
-                <h3>Docker</h3>
-                <h3>Full Stack Development</h3>
-                <h3>Team Building</h3>
-                <h3>Supervision and Management</h3>
-                <h3>Inventory management</h3>
-                <h3>Customer Service</h3>
-            </div>
-            <div class="resumeColumns">
-                <h1>About Me</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a ante erat. Pellentesque eros lectus, ornare ullamcorper nunc non, vestibulum mollis diam. 
-                    Suspendisse non mattis mauris, sagittis malesuada leo. Praesent non maximus mauris. Nunc ut scelerisque ex, in rutrum lectus. 
-                    Suspendisse fringilla pretium leo, nec sodales sapien sollicitudin et. Suspendisse cursus purus a condimentum posuere. Ut at erat sed justo rhoncus cursus quis vel dui.
-                </p>
-                <h1>WORK EXPERIENCE</h1>
-                <h2>Budget Specialist</h2>
-                <h3>Northern Kentucky University: 2022 - Present</h3>
-                <ul>
-                    <li>Utilize SAP to provide critical budgeting support for Safety and Emergency Management, ensuring efficient allocation of resources. </li>
-                    <li>Oversee the Facilities Project Webpage and multiple facilities pages via AEM, ensuring up-to-date and accessible information.</li>
-                    <li>Conduct comprehensive maintenance inspections on safety equipment campus-wide, ensuring compliance with regulatory standards.</li>
-                    <li>Collaborate on budget planning for facilities campus projects.</li>
-                    <li>Administer and maintain a robust project database using Microsoft Access.</li>
-                </ul>
-                <p>Managed accounts for special building projects across campus, overseeing budgeting, cost tracking, and financial reporting to ensure project success. 
-                    Collaborated with project teams to align financial resources with campus development goals, maintaining strict adherence to fiscal guidelines. 
-                    Streamlined processes to enhance efficiency, provided detailed financial insights to stakeholders, and supported strategic planning for infrastructure improvements.
-                </p>
-                
-                <h2>General Manager</h2>
-                <h3>Home2 Suites by Hilton: 2021 - 2022</h3>
-                <ul>
-                    <li>Oversee the operations of the hotel including recruitment, training, and guest needs. </li>
-                    <li>Assisting in task force training with sister properties throughout the country. </li>
-                    <li>Responsible for the preparation, presentation and subsequent achievement of the hotel's annual Business Plan which includes the Operating Budget, Marketing, Sales Plan and Capital Budget. </li>
-                    <li>Manage ongoing profitability of the hotel, ensuring revenue and guest satisfaction targets are met and exceeded.</li>
-                    <li>Developing all E-commerce, social media and digital marketing.</li>
-                    <li>Accounting of all inventories for the property.</li>
-                    <li>Ensure compliance with all Occupational Health & Safety acts, fire regulations and other regulatory requirements.</li>
-                </ul>
-                <p>Directed all hotel operations, including staff hiring, training, and retention, while maintaining over 95% occupancy year-round through strategic sales and customer relationship efforts. 
-                    Oversaw financial operations, achieving annual revenue of over $4,800,000 with a gross operating profit of over $2,800,000 consistently exceeding performance targets. 
-                    Implemented cost-saving measures without compromising quality, enforced brand standards, and led the team to secure numerous commercial contracts, boosting long-term profitability.
-                </p>
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html">Homepage</a></li>
+                <li class="active"><a href="resume.html">Resume</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- Main -->
+    <div class="resumeRow">
+        <div class="resumeColumns left">
+            <img src="{{ url_for('static', filename='images/Headshot.jpg') }}" alt="Headshot"> 
+            <h1>EDUCATION</h1>
+            <h2>Deming High School</h2>
+            <h3>Class of 2011</h3>
+            <h2>Northern Kentucky University</h2>
+            <h3>Currently pursuing a Bachelor's Degree in Computer Science with a minor in Computer Information Technology and Mathematics.</h3>
+            <h1>SKILLS</h1>
+            <h3>Python, Java and C.</h3>
+            <h3>Linux</h3>
+            <h3>Microsoft 365</h3>
+            <h3>MySQL</h3>
+            <h3>Docker</h3>
+            <h3>Full Stack Development</h3>
+            <h3>Team Building</h3>
+            <h3>Supervision and Management</h3>
+            <h3>Inventory Management</h3>
+            <h3>Customer Service</h3>
+        </div>
+        <div class="resumeColumns">
+            <h1>About Me</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a ante erat. Pellentesque eros lectus, ornare ullamcorper nunc non, vestibulum mollis diam. 
+                Suspendisse non mattis mauris, sagittis malesuada leo. Praesent non maximus mauris. Nunc ut scelerisque ex, in rutrum lectus. 
+                Suspendisse fringilla pretium leo, nec sodales sapien sollicitudin et. Suspendisse cursus purus a condimentum posuere. Ut at erat sed justo rhoncus cursus quis vel dui.
+            </p>
+            <h1>WORK EXPERIENCE</h1>
+            <h2>Budget Specialist</h2>
+            <h3>Northern Kentucky University: 2022 - Present</h3>
+            <ul>
+                <li>Utilize SAP to provide critical budgeting support for Safety and Emergency Management, ensuring efficient allocation of resources.</li>
+                <li>Oversee the Facilities Project Webpage and multiple facilities pages via AEM, ensuring up-to-date and accessible information.</li>
+                <li>Conduct comprehensive maintenance inspections on safety equipment campus-wide, ensuring compliance with regulatory standards.</li>
+                <li>Collaborate on budget planning for facilities campus projects.</li>
+                <li>Administer and maintain a robust project database using Microsoft Access.</li>
+            </ul>
+            <p>Managed accounts for special building projects across campus, overseeing budgeting, cost tracking, and financial reporting to ensure project success. 
+                Collaborated with project teams to align financial resources with campus development goals, maintaining strict adherence to fiscal guidelines. 
+                Streamlined processes to enhance efficiency, provided detailed financial insights to stakeholders, and supported strategic planning for infrastructure improvements.
+            </p>
+            
+            <h2>General Manager</h2>
+            <h3>Home2 Suites by Hilton: 2021 - 2022</h3>
+            <ul>
+                <li>Oversee the operations of the hotel including recruitment, training, and guest needs.</li>
+                <li>Assisting in task force training with sister properties throughout the country.</li>
+                <li>Responsible for the preparation, presentation and subsequent achievement of the hotel's annual Business Plan which includes the Operating Budget, Marketing, Sales Plan and Capital Budget.</li>
+                <li>Manage ongoing profitability of the hotel, ensuring revenue and guest satisfaction targets are met and exceeded.</li>
+                <li>Developing all E-commerce, social media and digital marketing.</li>
+                <li>Accounting of all inventories for the property.</li>
+                <li>Ensure compliance with all Occupational Health & Safety acts, fire regulations and other regulatory requirements.</li>
+            </ul>
+            <p>Directed all hotel operations, including staff hiring, training, and retention, while maintaining over 95% occupancy year-round through strategic sales and customer relationship efforts. 
+                Oversaw financial operations, achieving annual revenue of over $4,800,000 with a gross operating profit of over $2,800,000 consistently exceeding performance targets. 
+                Implemented cost-saving measures without compromising quality, enforced brand standards, and led the team to secure numerous commercial contracts, boosting long-term profitability.
+            </p>
 
-                <h2>Assistant General Manager</h2>
-                <h3>Comfort Inn and Suites: 2016 - 2021</h3>
-                <ul>
-                    <li>Primary supervisor to employees. Managing recruitment, training, scheduling and quality control.</li>
-                    <li>Accounting for inventory of all food and operating supplies and placing order for restocking.</li>
-                    <li>Assisting in accounting daily statistics reports and tax exemptions.</li>
-                    <li>Finding and following up with commercial sales leads, group contracts, renting of meeting spaces and all sales for hotel.</li>
-                </ul>
-                <p>Supported comprehensive hotel operations, driving commercial sales initiatives by securing significant revenue through strategic business development and client relationship management, 
-                    while expanding the hotel’s network with numerous high-value commercial accounts. Led maintenance efforts during two major renovations, overseeing project execution, and managed diverse tasks including front desk operations, room cleaning, food ordering, and inventory management. 
-                    Strengthened operational efficiency by coordinating staff across departments, ensured seamless daily functioning, and upheld quality standards to support guest satisfaction and business success.
-                </p>
-            </div>
+            <h2>Assistant General Manager</h2>
+            <h3>Comfort Inn and Suites: 2016 - 2021</h3>
+            <ul>
+                <li>Primary supervisor to employees. Managing recruitment, training, scheduling and quality control.</li>
+                <li>Accounting for inventory of all food and operating supplies and placing order for restocking.</li>
+                <li>Assisting in accounting daily statistics reports and tax exemptions.</li>
+                <li>Finding and following up with commercial sales leads, group contracts, renting of meeting spaces and all sales for hotel.</li>
+            </ul>
+            <p>Supported comprehensive hotel operations, driving commercial sales initiatives by securing significant revenue through strategic business development and client relationship management, 
+                while expanding the hotel’s network with numerous high-value commercial accounts. Led maintenance efforts during two major renovations, overseeing project execution, and managed diverse tasks including front desk operations, room cleaning, food ordering, and inventory management. 
+                Strengthened operational efficiency by coordinating staff across departments, ensured seamless daily functioning, and upheld quality standards to support guest satisfaction and business success.
+            </p>
         </div>
-        <!--Footer-->
-        <div class="copyright">
-            <a>Spencer Plus &copy</a>
-        </div>
-    </body>
+    </div>
+    <!-- Footer -->
+    <div class="copyright">
+        <a>Spencer Plus ©</a>
+    </div>
+</body>
 </html>
