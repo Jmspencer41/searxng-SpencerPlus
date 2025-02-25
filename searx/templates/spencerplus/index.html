@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Spencer+</title>
+		<meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/skel.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <div id="header" class="skel-panels-fixed">
+            <div id="logo">
+                <img src="images/Spencer_Plus_Logo.png">
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li class="active"><a href="index.html">Homepage</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Banner -->
+        <div id="banner" class="container">
+            <section>
+                <p>Welcome to Spencer Plus!</p>
+                <p>Fully private search engine (Not Implemented.)</p> <!--Somehow implement SearX in here-->
+                <form method="post" action="{{ url_for('search') }}" id="search_form">
+                    <input class="text" type="text" name="q" id="name" placeholder="Flying Monkeys" value="{{ query if query else '' }}">
+                    <button type="submit" class="button small">Search</button>
+                </form>
+            </section>
+        </div>
+        <!-- Quick Links -->
+        <div class="container">
+            <div class="row no-collapse-1">
+                <section class="4u"><a href="#" class="image featured"><img src="images/plex.JPG" alt="" width="368" height="160"></a>
+                    <div class="box">
+                        <p>Stream movies, tv shows & more on Spencer+ Plex account!</p>
+                        <a href="https://app.plex.tv/" class="button">Plex</a> </div>
+                </section>
+                <section class="4u">
+                    <a href="#" class="image featured"><img src="images/nextcloud.png" alt="" width="368" height="160"></a>
+                    <div class="box">
+                        <p>Access photos and other media through Spencer+ Nextcloud!</p>
+                        <a href="https://nextcloud.spencerplus.com" class="button">Nextcloud</a> 
+                    </div>
+                </section>
+                <section class="4u">
+                    <a href="#" class="image featured"><img src="images/wiki.png" alt="" width="368" height="160"></a>
+                    <div class="box">
+                        <p>Check out my articles on the Spencer+ Wiki!</p>
+                        <a href="https://wiki.spencerplus.com" class="button">Wiki.js</a>
+                    </div>
+                </section>
+            </div>
+            <div class="row no-collapse-1">
+                <section class="4u">
+                    <a href="#" class="image featured"><img src="images/jellyfin.png" alt="" width="368" height="160"></a>
+                    <div class="box">
+                        <p>Stream movies, tv shows & more on Spencer+ Jellyfin</p> 
+                        <a href="https://jellyfin.spencerplus.com" class="button">Jellyfin</a>
+                    </div>
+                </section>
+                <section class="4u">
+                    <a href="#" class="image featured"><img src="images/Cloudflare.JPG" alt="" width="368" height="160"></a>
+                    <div class="box">
+                        <p>Access Spencer+ Cloudflare portal. Domain information</p>
+                        <a href="https://dash.cloudflare.com/login" class="button">Cloudflare</a> 
+                    </div>
+                </section>
+                <section class="4u">
+                    <a href="#" class="image featured"><img src="images/Adguard.png" alt="" width="368" height="160"></a>
+                    <div class="box">
+                        <p>Access Spencer+ Adguard portal, Locally hosted DNS</p>
+                        <a href="#" class="button">Adguard</a> <!-- TODO: what should i put here? -->
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!--Footer-->
+        <div class="copyright">
+            <a>Spencer Plus &copy</a>
+        </div>
+    </body>
+</html>

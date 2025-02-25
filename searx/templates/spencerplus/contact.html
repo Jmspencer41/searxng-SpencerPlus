@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Spencer+</title>
+		<meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/skel.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+		<!-- Header -->
+        <div id="header" class="skel-panels-fixed">
+            <div id="logo">
+                <img src="images/Spencer_Plus_Logo.png">
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Homepage</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li class="active"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="banner" class="container">
+            <section>
+                <h1>Contact me below</h1>
+            </section>
+        </div>
+        <div>
+            <form action="https://webdevbasics.net/scripts/demo.php" method="post">
+                <fieldset>
+                  <legend>Contact Information</legend>
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" required>
+            
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required>
+                  
+                  <label for="phone">Phone Number:</label>
+                  <input type="phone" id="phone" name="phone" required>
+                </fieldset>
+            
+                <fieldset>
+                  <legend>Message</legend>
+                  <textarea name="Message" id="Message" rows="4" cols="40"></textarea>
+                </fieldset>
+            
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+              </form>
+        </div>
+        <!--Footer-->
+        <div class="copyright">
+            <a>Spencer Plus &copy</a>
+        </div>
+    </body>
+</html>
