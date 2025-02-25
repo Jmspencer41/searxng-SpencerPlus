@@ -781,6 +781,19 @@ def search():
         # fmt: on
     )
 
+# Custom routes for Spencer+ static pages
+@app.route('/resume', methods=['GET'])
+def resume():
+    return render('spencerplus/resume.html')
+
+@app.route('/projects', methods=['GET'])
+def projects():
+    return render('spencerplus/projects.html')
+
+@app.route('/contact', methods=['GET'])
+def contact():
+    return render('spencerplus/contact.html')
+
 
 @app.route('/about', methods=['GET'])
 def about():
